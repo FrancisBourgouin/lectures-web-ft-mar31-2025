@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Super page of <em>Destiny</em>!</h1>
+
+    <% if(user){ %>
+      <p>
+        User name: <%= user.name %>
+      </p>
+      <p>
+        User email: <%= user.email %>
+      </p>
+    <% } else { %>
+      <p>HEY NO USER WITH THAT ID</p>
+    <% } %>
+    <footer>
+      <strong>Copyright - <%= currentYear %></strong>
+    </footer>
+  </body>
+</html>
