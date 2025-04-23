@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog posts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/mock_data.js"></script>
+    <script src="/helpers.js"></script>
+    <script src="/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Small blog for fun!</h1>
+      <h2><a href="https://google.com">GO TO GOOGLE!</a></h2>
+    </header>
+    <form>
+      <input type="text" name="title" placeholder="Enter the title" required>
+      <input type="text" name="subtitle" placeholder="Enter the subtitle">
+      <select name="userId">
+        <option value="">Select the author id</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      <textarea name="body" placeholder="Enter the content of the post"></textarea>
+      <button>Add post!</button>
+      <button type="reset">Reset the form</button>
+    </form>
+    <main>
+      <h1 class="no-javascript">HEY YOU NEED TO ENABLE JAVASCRIPT!</h1>
+      <!-- <article>
+        <h1>POST #ID : TITLE HERE</h1>
+        <h2>By author: AUTHOR HERE</h2>
+        <p>BODY HERE</p>
+      </article> -->
+    </main>
+  </body>
+</html>
