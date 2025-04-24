@@ -1,0 +1,53 @@
+$background: #030c0b;
+$text: #e7f8f8;
+$secondary: #34c5b9;
+$primary: #df92da;
+$accent: #274891;
+
+$text: #f7e2f6;
+$background: #0b030b;
+$primary: #df92da;
+$secondary: #247b33;
+$accent: #4ea7cc;
+
+html,
+body {
+  font-size: 30px;
+  background-color: $background;
+  color: $text;
+}
+
+h1,
+h2,
+h3 {
+  color: $secondary;
+}
+
+header {
+  background-color: $text;
+
+  h1 {
+    color: $accent;
+  }
+
+  h2 {
+    color: $primary;
+  }
+
+  &:hover{
+    background:#bada55;
+  }
+
+  @media screen and (min-width:900px){
+    background-color: $background;
+  }
+}
+
+// main > h1
+
+// main article h1
+
+em,
+strong {
+  color: $accent;
+}

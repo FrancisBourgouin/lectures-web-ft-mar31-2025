@@ -1,0 +1,37 @@
+html,
+body {
+  font-size: 30px;
+  background-color: #0b030b;
+  color: #f7e2f6;
+}
+
+h1,
+h2,
+h3 {
+  color: #247b33;
+}
+
+header {
+  background-color: #f7e2f6;
+}
+header h1 {
+  color: #4ea7cc;
+}
+header h2 {
+  color: #df92da;
+}
+header:hover {
+  background: #bada55;
+}
+@media screen and (min-width: 900px) {
+  header {
+    background-color: #0b030b;
+  }
+}
+
+em,
+strong {
+  color: #4ea7cc;
+}
+
+/*# sourceMappingURL=style.css.map */
