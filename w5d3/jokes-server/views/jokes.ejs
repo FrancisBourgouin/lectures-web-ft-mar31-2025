@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JOKES!</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>JOKES!</h1>
+    <p>Welcome to JOKES!</p>
+
+    <main>
+      <% for(const joke of jokes){ %>
+        <article>
+          <p><strong>Question:</strong> <%= joke.question %></p>
+          <p><strong>Answer:</strong> <%= joke.answer %></p>
+          <p><strong>By:</strong> <%= joke.author_name ? joke.author_name : "Unknown author" %></p>
+        </article>
+      <% } %>
+    </main>
+  </body>
+</html>

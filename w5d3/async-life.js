@@ -17,12 +17,37 @@ fs.readFile("./.gitignore")
   .catch(err => console.log("OH NO"))
   .finally(() => console.log("We done."))
 
-console.log("Almost done!")
+// console.log("Almost done!")
 
 const someObject = new Object()
-const anotherObject = {}
+const anotherObject = {} // Syntax Sugar
 
 // LAZYNESS
 
 
 // Async/Await (Syntax Sugar for Promises)
+
+await Promise.all()
+
+const main = async () => {  
+  try{
+    const data2 = await fs.readFile("./README2.md")
+    
+    console.log("data2", data2)
+    
+    console.log("We done.")
+  } catch (err){
+    console.log("OH NO!")
+  }
+}
+
+const main2 = async () => {
+  const data = await fs.readFile("./.gitignore")
+  
+  console.log("data", data)
+  
+  console.log("We done.")
+}
+
+main()
+// main2()
