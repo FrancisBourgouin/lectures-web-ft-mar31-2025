@@ -1,7 +1,6 @@
 DROP TABLE IF EXISTS jokes; 
 DROP TABLE IF EXISTS authors;
 
--- Unique identifier => UUIDs
 
 CREATE TABLE authors(
     id SERIAL PRIMARY KEY,
